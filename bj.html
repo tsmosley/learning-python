@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blackjack</title>
+    <style>
+        /* Add some basic styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 120px;
+            height: 180px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card .value {
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Blackjack</h1>
+    <div class="cards">
+        <div class="card">
+            <div class="value">5</div>
+            <div class="suit">Spades</div>
+        </div>
+        <div class="card">
+            <div class="value">J</div>
+            <div class="suit">Hearts</div>
+        </div>
+    </div>
+    <h2>Dealer's hand</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="value">?</div>
+            <div class="suit"></div>
+        </div>
+        <div class="card">
+            <div class="value">7</div>
+            <div class="suit">Diamonds</div>
+        </div>
+    </div>
+    <form>
+        <input type="radio" name="choice" value="hit" id="hit">
+        <label for="hit">Hit</label>
+        <input type="radio" name="choice" value="stand" id="stand">
+        <label for="stand">Stand</label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
