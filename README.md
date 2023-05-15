@@ -1,2 +1,2 @@
 # learning-python
-Random Python projects 
+This first project is a blackjack game
